@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home</title>
+    <style>
+        .input{
+            width: 100%;
+            border-radius: 20px;
+            padding: 25px;
+            height: 18px;
+    
+        }
+        #s1{
+            padding: 5px;
+            border-radius: 20px;
+            margin-top:5px;
+            
+        }
+       #s1:hover{
+            background-color:coral;
+        }
+        .btn1{
+            background-color: rgb(203, 213, 214);
+            padding: 4px;
+            border-radius: 20px;
+            margin-top: 10px;
+            margin-left:70px;
+            width: 70px;
+        }
+        
+button:hover {
+  opacity: 0.8;
+}
+
+
+
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+ 
+
+        html{
+            scroll-behavior: smooth;
+        }
+        i{
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+        i:hover{
+            opacity: 0.8;
+        }
+    *{
+  box-sizing: border-box;
+}
+
+
+
+
+
+.dropdown1 {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown1 .dropbtn1 {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 3px;
+  background-color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+
+
+.dropdown1-content {
+  display:none;
+  position:absolute;
+  width: 80%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+margin-left: 10%;
+    background-color: aliceblue;
+}
+
+
+
+.dropdown1:hover .dropdown1-content {
+  display:block;
+    position: fixed;
+}
+
+/* Create three equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  background-color: aliceblue;
+  height: 250px;
+}
+
+.column1 a {
+  float: none;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.column1 a:hover {
+  background-color: #ddd;
+}
+
+/* Clear floats after the columns */
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column1 {
+    width: 100%;
+    height: 100%;
+  }
+}
+        #text1{
+        width: 80%;
+        height:70px;
+        padding:12px;
+        border: 1px solid blue;
+    }
+        
+/* button{
+        padding:5px; background-color:darkcyan;
+        height: 50px;
+            width: 40px;
+    }
+     */
+     #button1{
+  padding: 13px;
+  margin-left: 0px;
+  background:gainsboro;
+  font-size: 17px;
+  border: solid 1px black;
+  cursor: pointer;
+  height: 70px;
+}
+    </style>
+  
+   
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="2">
+    <header>
+        <nav class= "navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                 <li><a href="#news">News</a></li>
+                 <li><a href="#services">Services</a></li> 
+                <li><a href="#events">Events</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-user"   style="margin-right: 10px"></span><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">SignUp</button></a></li>
+                <li style="padding: 18px;">
+                    
+                    
+
+  <div class="dropdown1">
+    <button class="dropbtn1"><i class="fa fa-globe" aria-hidden="true"></i>worldwide 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown1-content">
+       <div class="row1">
+        <div class="column1">
+          <h3>Americas</h3>
+          <a href="#"><img src="./images/usa.png" width="35" height="33"style="margin-right: 20px;">USA</a>
+          <a href="#"><img src="./images/arg.png" width="35" height="33"style="margin-right: 20px;">Argentina</a>
+          <a href="#"><img src="./images/brazil.png" width="35" height="33"style="margin-right: 20px;">Brazil</a>
+        </div>
+        <div class="column1">
+          <h3>EUROPE</h3>
+          <a href="#"><img src="./images/bel.png" width="35" height="30" style="margin-right: 20px;">Belgium</a>
+          <a href="#"><img src="./images/france.png" width="35" height="33"style="margin-right: 20px;">France</a>
+          <a href="#"><img src="./images/fin.png" width="35" height="33"style="margin-right: 20px;">Finland</a>
+        </div>
+            <div class="column1">
+          <h3>Asia Pacific</h3>
+          <a href="#"><img src="./images/aus.png" width="35" height="33"style="margin-right: 20px;">Australia</a>
+          <a href="#"><img src="./images/india.png" width="35" height="33" style="margin-right: 20px;">India</a>
+          <a href="#"><img src="./images/china.png" width="35" height="33"style="margin-right: 20px;">China </a>
+        </div>
+      </div>
+    </div>
+  </div>                    
+</li>
+         <li style="padding:10px;">  <button onclick="show() "><i class="fas fa-search"></i></button></li>
+                </ul>
+            </div>
+         </nav>
+   </header>
+    <div id="search" style="display: none;background-color: azure">
+     <div class="row" style="margin-top:50px;">
+        <div class="col-sm-3">
+        </div>
+        <div class="col-sm-6">
+            <form id="form1" style="margin-top:40px;">
+                <input type="text" placeholder="What can we help you find?"  value="" id="text1">
+                <button  type="submit" id="button1" onclick="fun()" ><i class="fa fa-search"></i></button>
+                
+                <h2 style="margin-top:50px;">
+                        Type in a topic service or offering and then <b> hit Enter to search</b>
+                </h2>
+            </form>
+        </div>
+         <button  class="btn btn-danger" onclick="retn()" style="margin-left: 85%;">close</button>
+    </div>
+    
+    
+    
+    </div>
+    <div  id="cont"style="margin-top: 30px" >
+        <div class="row" style="margin-bottom: 20px; background-color: azure">
+            <div class="col-sm-4">
+                <img src="./images/cogni.jpg" alt="image" style="width:90%;height:100%">
+            </div>
+     <div class="col-sm-4"></div>
+            <div class="col-sm-4" style="background-color: aliceblue;width: 380px">
+                <h1 style="align-content: center;margin-top:40px">LOGIN</h1>
+                <form id="form1"style="width: 60%;margin-top: 40px; margin-left: 60px;" >
+        UserName: <input type="text" class="input" id="uname">
+        Password: <input type="password" class="input" id="pswd">
+                    <button type="submit" class="btn1" onclick="func()">LogIn</button>
+        </form>
+            </div>
+    </div>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="./images/cogni1.jpg" alt="Los Angeles"  width="1920">
+    </div>
+
+    <div class="item">
+      <img src="./images/cogni2.jpg" alt="Chicago" width="1920">
+    </div>
+
+    <div class="item">
+      <img src="./images/cogni3.jpg" alt="New York" width="1920">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<!--<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">SignUp</button>-->
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" >
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="./images/cogni.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container" style="margin-bottom: 20px">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname"  class="input"required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw"  class="input"required>
+         <label for="email"><b>Email</b></label>
+      <input type="email" placeholder="Email" name="email"  class="input"required>
+         <label for="phone"><b>Contact No:</b></label>
+      <input type="text" placeholder="Email here" name="email"  class="input"required>
+        
+      <button type="submit" class="btn btn-success"  style="margin-top: 10px;">Sign Up</button>
+      <label style="margin-left: 80%">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn btn-danger" >Cancel</button>
+      </label>
+    </div>
+
+  
+      
+      
+  </form>
+</div>
+<div class="row">
+<div class="col-sm-6" style="background-color: bisque; height: 300px;overflow: scroll  " id="newsdiv" onmouseout="jfun11()">
+    <p style="align-self: center" id="news"><b><u>News</u></b></p>
+        <ul>
+        <li><b>Pulwama Attack: Bikaner Asks Pakistan Nationals To Leave Within 48 Hours
+            ANI |</b> Tuesday February 19, 2019,<br> Bikaner
+Pulwama terror attack: Pakistan nationals in Rajasthan's Bikaner have been asked to leave the city within 48 hours, the District Magistrate said in an order on Monday.
+            </li>
+         <li><b>Former Donald Trump Adviser Apologizes To Judge After Instagram Post</b> Reuters | Tuesday February 19, 2019, Washington<br>
+            US President Donald Trump's former adviser Roger Stone apologized on Monday after posting on Instagram a photo of the judge overseeing his trial for allegedly making false statements to Congress, obstruction and witness tampering.</li>
+                <li><b>Pulwama Attack: Bikaner Asks Pakistan Nationals To Leave Within 48 Hours
+            ANI |</b> Tuesday February 19, 2019,<br> Bikaner
+Pulwama terror attack: Pakistan nationals in Rajasthan's Bikaner have been asked to leave the city within 48 hours, the District Magistrate said in an order on Monday.
+            </li>
+         <li><b>Former Donald Trump Adviser Apologizes To Judge After Instagram Post</b> Reuters | Tuesday February 19, 2019, Washington<br>
+            US President Donald Trump's former adviser Roger Stone apologized on Monday after posting on Instagram a photo of the judge overseeing his trial for allegedly making false statements to Congress, obstruction and witness tampering.</li>
+            <li><b>Pulwama Attack: Bikaner Asks Pakistan Nationals To Leave Within 48 Hours
+            ANI |</b> Tuesday February 19, 2019,<br> Bikaner
+Pulwama terror attack: Pakistan nationals in Rajasthan's Bikaner have been asked to leave the city within 48 hours, the District Magistrate said in an order on Monday.
+            </li>
+         <li><b>Former Donald Trump Adviser Apologizes To Judge After Instagram Post</b> Reuters | Tuesday February 19, 2019, Washington<br>
+            US President Donald Trump's former adviser Roger Stone apologized on Monday after posting on Instagram a photo of the judge overseeing his trial for allegedly making false statements to Congress, obstruction and witness tampering.</li>
+                <li><b>Pulwama Attack: Bikaner Asks Pakistan Nationals To Leave Within 48 Hours
+            ANI |</b> Tuesday February 19, 2019,<br> Bikaner
+Pulwama terror attack: Pakistan nationals in Rajasthan's Bikaner have been asked to leave the city within 48 hours, the District Magistrate said in an order on Monday.
+            </li>
+         <li><b>Former Donald Trump Adviser Apologizes To Judge After Instagram Post</b> Reuters | Tuesday February 19, 2019, Washington<br>
+            US President Donald Trump's former adviser Roger Stone apologized on Monday after posting on Instagram a photo of the judge overseeing his trial for allegedly making false statements to Congress, obstruction and witness tampering.</li>
+            
+        </ul>
+    </div> 
+    <div class="col-sm-6" style="background-color:gainsboro; height: 300px;">
+    <p style="align-self: center" id="events"><b><u>Events</u></b></p>
+        <ul>
+        <li><b>
+  
+Summit for Clinical Operations Executives (SCOPE) 2019</b> Tuesday February 19, 2019,<br> Cognizant’s Life Sciences business unit is a premiere sponsor of SCOPE 2019. We’ll be hosting the first-ever Shared Investigator Platform User Forum; presenting our expertise in using digital technologies to improve clinical operations; and holding discussions and demos in Booth 907 in the Exhibit Hall. Join us!
+
+            <br><h3>Hyatt Regency Orlando | Orlando, FL</h3>
+
+
+            </li>
+         <li><b>
+  
+Modern Business Experience</b>  Tuesday February 19, 2019, Washington<br>
+          Cognizant is a Platinum sponsor of Modern Business Experience—a thought leadership conference, presented by Oracle, dedicated to finance, human resources and supply chain professionals. The event is designed around inspiring keynotes, product expert discussions and networking activities. Join us at the event and help your customers prepare for a digital future.<br>
+
+             <h3>Mandalay Bay Convention Center | Las Vegas</h3></li></ul>
+    </div> 
+        
+        </div>     
+<div class="row" style="margin-top: 15px; background-image: linear-gradient(-45deg,aliceblue,white)" id="services">
+<div class="container" style="margin-left: 25%">
+    <h1 style="font-family: cursive; color: cadetblue";> Our Services</h1>
+    <div class="col-sm-3" style="border-right:solid 1px grey; height: 250px;">
+    <h3>Cognizant</h3>
+        <h2>Digital Business</h2>
+        <p>
+        Working to reshape business models, modernize products and enhance customer experiences to drive growth</p>
+        <button type="button" class="btn btn-primary" style="margin-bottom: 30px;">Learn More<i class="fa fa-angle-double-right"></i></button>
+    
+    </div>
+        <div class="col-sm-3" style="border-right:solid 1px grey;height: 250px;  ">
+    <h3>Cognizant</h3>
+        <h2>Digital Operations</h2>
+        <p>
+        Reinventing and managing your most essential business processes with new ways of working</p>
+        <button type="button" class="btn btn-danger" style="margin-bottom: 30px;">Learn More<i class="fa fa-angle-double-right"></i></button>
+    
+    </div>
+        <div class="col-sm-3" style="border-right: : solid 2px green;height: 250px;margin-right: 20px; ">
+    <h3>Cognizant</h3>
+        <h3>Digital Systems & Technology</h3>
+        <p>
+        Simplifying, modernizing and securing the IT infrastructure and applications that are the backbone of your business</p>
+        <button type="button" class="btn btn-success" style="margin-bottom: 30px;">Learn More<i class="fa fa-angle-double-right"></i></button>
+    
+    </div>
+    </div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+    </div>
+  
+    
+    
+    <footer style="background-color: azure;">
+        <div style="padding: 50px;margin-left: 35%; ">
+            <a href="#"><i class="fab fa-facebook-square" style="font-size:48px;"></i></a>
+            <a href="#"><i class="fab fa-google-plus"style="font-size:48px;color: red"></i></a>  
+            <a href="#"><i class="fab fa-linkedin-square"style="font-size:48px;color: dodgerblue"></i></a>   
+            <a href="#">    <i class="fab fa-twitter"style="font-size:48px;color: aqua"></i></a> 
+             <span style="margin-left: 50px;"><a href="sitemap.html" ><b>Sitemap</b></a></span>
+<!--
+            <span>
+                <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Sitemap</a>
+        </h4>
+    
+      <div id="collapse1" class="panel-collapse collapse in">
+        <div class="panel-body">
+        <ul>
+            <li><a href="#">India</a></li>
+            <li><a href="#">India</a></li>
+            <li><a href="#">North america</a></li>
+            <li><a href="#">England</a></li>
+            <li><a href="#">China</a></li>
+            <li><a href="#">bangkok</a></li>
+            <li><a href="#">Singapore</a></li>
+            </ul>
+            
+  
+          
+          </div>
+      </div>
+    </div>
+
+    
+
+    
+  </div>
+            </span>
+-->
+            <h4>&copy abhijeet</h4>
+        </div>
+    </footer >
+    
+    <script>
+    function func(){
+        var x= document.getElementById("uname").value;
+        var y= document.getElementById("pswd").value;
+        if(y.length<6||y.length>12)
+            {
+                alert("password must be between 6 to 12  characters");
+            }
+    }
+        function show(){
+         document.getElementById('cont').style.display="none";
+            document.getElementById('search').style.display="block";
+        }
+      function jfun11(){
+          var v = document.getElementById("newsdiv");
+          v.scrollTop=0;
+      }
+        function retn(){
+         document.getElementById('cont').style.display="block";
+            document.getElementById('search').style.display="none";
+        }
+    
+    </script>
+      <script>
+    function fun(){
+        var x=document.getElementById("text1").value;
+        if(x.length<1)
+        alert("Enter  valid input");
+    }
+    </script>
+
+    
+    
+   
+    
+</body>
+</html>

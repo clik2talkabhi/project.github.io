@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="./style/style2.css"  type="text/css">
+   
+</head>
+<body>
+     <header>
+        <nav class= "navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="homecopy1.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                 <li><a href="homecopy1.html#news">News</a></li>
+                 <li><a href="homecopy1.html#services">Services</a></li> 
+                <li><a href="homecopy1.html#events">Events</a></li>
+<!--                <li><a href="#"><span class="glyphicon glyphicon-user"   style="margin-right: 10px"></span><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">SignUp</button></a></li>-->
+                <li style="padding: 18px;">
+                    
+                    
+
+  <div class="dropdown1">
+    <button class="dropbtn1"><i class="fa fa-globe" aria-hidden="true"></i>worldwide 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown1-content">
+       <div class="row1">
+        <div class="column1">
+          <h3>Americas</h3>
+          <a href="#"><img src="./images/usa.png" width="35" height="33"style="margin-right: 20px;">USA</a>
+          <a href="#"><img src="./images/arg.png" width="35" height="33"style="margin-right: 20px;">Argentina</a>
+          <a href="#"><img src="./images/brazil.png" width="35" height="33"style="margin-right: 20px;">Brazil</a>
+        </div>
+        <div class="column1">
+          <h3>EUROPE</h3>
+          <a href="#"><img src="./images/bel.png" width="35" height="30" style="margin-right: 20px;">Belgium</a>
+          <a href="#"><img src="./images/france.png" width="35" height="33"style="margin-right: 20px;">France</a>
+          <a href="#"><img src="./images/fin.png" width="35" height="33"style="margin-right: 20px;">Finland</a>
+        </div>
+            <div class="column1">
+          <h3>Asia Pacific</h3>
+          <a href="#"><img src="./images/aus.png" width="35" height="33"style="margin-right: 20px;">Australia</a>
+          <a href="#"><img src="./images/india.png" width="35" height="33" style="margin-right: 20px;">India</a>
+          <a href="#"><img src="./images/china.png" width="35" height="33"style="margin-right: 20px;">China </a>
+        </div>
+      </div>
+    </div>
+  </div>                    
+</li>
+         <li style="padding:10px;">  <button onclick="show() "><i class="fas fa-search"></i></button></li>
+                </ul>
+            </div>
+         </nav>
+   </header>
+    <div class="row" id="frm1">
+       
+        <form id="form1" method="GET">
+             <center><h1>CONTACT </h1></center>
+            Firstname : <input type="text" class="input1" id="fname" required>
+            Lastname : <input type="text" class="input1" id="uname" required>
+            Email : <input type="email" class="input1" required>
+            Phone no: <input type="text" class="input1" pattern="[0-9]{10}" title="enter a valid phone number" required>
+            Age: <input type="number" class="input1" min="20" required>
+            Date Of Birth: <input type="date" class="input1" required>
+            Organisation: <input type="text" class="input1" id="org" required>
+            <button type="button" id="btn3" onclick="chek()">Submit</button>
+
+        </form>
+
+    </div>
+        
+    <footer style="background-color: azure;">
+      <div style="padding: 50px;margin-left: 35%; ">
+          <a href="#"><i class="fab fa-facebook-square" style="font-size:48px;"></i></a>
+          <a href="#"><i class="fab fa-google-plus"style="font-size:48px;color: red"></i></a>  
+          <a href="#"><i class="fab fa-linkedin-square"style="font-size:48px;color: dodgerblue"></i></a>   
+          <a href="#">    <i class="fab fa-twitter"style="font-size:48px;color: aqua"></i></a> 
+           <span style="margin-left: 50px;"><a href="sitemap.html" ><b>Sitemap</b></a></span>
+           <span style="margin-left: 50px;"><a href="contactform.html" ><b>Contact us</b></a></span>
+
+          <h4>&copy abhijeet</h4>
+      </div>
+  </footer >
+  
+
+    
+    
+       
+    <script>
+    function chek(){
+        var str= document.getElementById('fname').value;
+        var str1= document.getElementById('lname').value;
+        if(str.search(/[a-zA-Z]/)==-1||str1.search(/[a-zA-Z]/)==-1)
+        {
+            alert("invalid first and last name");
+        }
+    }
+    </script>
+        <script>
+    function func(){
+        var x= document.getElementById("uname").value;
+        var y= document.getElementById("pswd").value;
+        if(y.length<6||y.length>12)
+            {
+                alert("password must be between 6 to 12  characters");
+            }
+    }
+        function show(){
+         document.getElementById('cont').style.display="none";
+            document.getElementById('search').style.display="block";
+        }
+      function jfun11(){
+          var v = document.getElementById("newsdiv");
+          v.scrollTop=0;
+      }
+        function retn(){
+         document.getElementById('cont').style.display="block";
+            document.getElementById('search').style.display="none";
+        }
+    
+    </script>
+      <script>
+    function fun(){
+        var x=document.getElementById("text1").value;
+        if(x.length<1)
+        alert("Enter  valid input");
+    }</script>
+</body>
+</html>
